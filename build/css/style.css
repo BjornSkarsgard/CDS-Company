@@ -26,28 +26,11 @@ li {
   margin: -1px;
   clip: rect(0 0 0 0); }
 
-.wrapper {
-  transition: transform 0.5s ease; }
+.hide {
+  display: none; }
 
-.wrapper--active {
-  transform: translateX(320px);
-  transition: transform 0.5s ease; }
-
-@media (min-width: 1300px) {
-  .wrapper__main {
-    flex-direction: row;
-    align-items: normal;
-    min-width: 1283px;
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0; } }
-
-@font-face {
-  font-weight: normal;
-  font-family: 'Aqum';
-  font-style: normal;
-  src: url("../fonts/Aqum.ttf") format("truetype"); }
+.show {
+  display: block; }
 
 .content {
   display: flex;
@@ -200,13 +183,6 @@ label[for="maps"]::before {
 
 .content__btn--apply:hover {
   color: #0c74e2; }
-
-.hide {
-  position: absolute;
-  visibility: hidden; }
-
-.show {
-  visibility: visible; }
 
 .block {
   width: 210px; }
